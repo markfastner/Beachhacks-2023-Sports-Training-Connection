@@ -15,7 +15,6 @@ import { TbBike } from "react-icons/tb";
 import { BsGraphUp, BsGlobe } from "react-icons/bs";
 import { AiOutlineWechat } from "react-icons/ai";
 import "./dashboard.css";
-import graph from "./graph.png";
 import Navbar from "../../navbar/NavBar";
 
 function dashboard(props) {
