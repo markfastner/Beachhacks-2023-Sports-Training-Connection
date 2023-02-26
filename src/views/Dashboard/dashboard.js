@@ -27,14 +27,11 @@ function dashboard(props) {
         </Rect>
       </Rect1Row>
       <Rect2Row>
+        <Link to="/Categories">
         <Rect2 style={{ borderRadius: "50px", color: "white" }}>
-          <p>Categories</p>
+          <button>Categories</button>
           <IconRow>
-            <Link to="/Categories">
-              <button>
                 <FaFootballBall />
-              </button>
-            </Link>
             <IoIosFitness style={{ marginLeft: 38 }} />
             <FaBasketballBall style={{ marginLeft: 38 }} />
             <FaSwimmer style={{ marginLeft: 38 }} />
@@ -45,6 +42,7 @@ function dashboard(props) {
             <FaRunning style={{ marginLeft: 38 }} />
           </Icon5Row>
         </Rect2>
+        </Link>
         <Link to="/Discover">
           <Rect4 style={{ borderRadius: "50px", color: "white" }}>
             <button>Discover</button>

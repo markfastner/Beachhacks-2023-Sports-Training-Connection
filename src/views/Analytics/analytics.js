@@ -6,9 +6,12 @@ import graph4 from "./graph4.png";
 import graph5 from "./graph5.png";
 import graph6 from "./graph6.png";
 import "./analytics.css";
+import Navbar from "../../navbar/NavBar";
 
 const analytics = () => {
   return (
+    <div>
+      <Navbar />
     <div className="analytics-box">
       <div className="row1">
         <img src={graph5} style={{ width: 400, marginTop: 20 }}></img>
@@ -24,6 +27,7 @@ const analytics = () => {
 
         <img src={graph6} style={{ width: 400, marginTop: 20 }}></img>
       </div>
+    </div>
     </div>
   );
 };
