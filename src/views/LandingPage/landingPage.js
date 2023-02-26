@@ -4,7 +4,18 @@ import MaterialCommunityIconsIcon from "react-native-vector-icons/dist/MaterialC
 
 function Untitled(props) {
   return (
-    <Image2 src={require("../assets/images/R.jpeg")} resizeMode="contain">
+    <>
+      <RectStackRow>
+        <RectStack>
+          <Rect></Rect>
+          <LoremIpsum>Exercise with a purpose.</LoremIpsum>
+        </RectStack>
+        <Button5>
+          <ButtonOverlay>
+            <SignUp>Sign Up!</SignUp>
+          </ButtonOverlay>
+        </Button5>
+      </RectStackRow>
       <ButtonStackRow>
         <ButtonStack>
           <Button>
@@ -31,59 +42,101 @@ function Untitled(props) {
           <Login>Login</Login>
         </Button4Stack>
       </ButtonStackRow>
-      <RectStackRow>
-        <RectStack>
-          <Rect></Rect>
-          <LoremIpsum>Exercise with a purpose.</LoremIpsum>
-        </RectStack>
-        <Button5>
-          <ButtonOverlay>
-            <SignUp>Sign Up!</SignUp>
-          </ButtonOverlay>
-        </Button5>
-      </RectStackRow>
       <MaterialCommunityIconsIcon
         name="home"
         style={{
           color: "rgba(128,128,128,1)",
           fontSize: 40,
-          height: 43,
-          width: 40,
-          marginTop: 475,
-          marginLeft: 1526,
+          marginTop: 768,
+          marginLeft: 1162
         }}
       ></MaterialCommunityIconsIcon>
-    </Image2>
+    </>
   );
 }
 
-const Image2 = styled.img`
-  display: flex;
-  width: 2113px;
-  height: 965px;
-  flex-direction: column;
-  margin-top: -92px;
-  margin-left: -364px;
+const Rect = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 971px;
+  height: 135px;
+  position: absolute;
+  background-color: rgba(52,31,174,1);
+  border-width: 0px;
+  border-color: #000000;
+  border-style: dotted;
+  border-radius: 39px;
+  box-shadow: 3px 3px 100px  0.42px rgba(0,0,0,1) ;
 `;
 
 const ButtonOverlay = styled.button`
-  display: block;
-  background: none;
-  height: 100%;
-  width: 100%;
-  border: none;
+ display: block;
+ background: none;
+ height: 100%;
+ width: 100%;
+ border:none
+ `;
+const LoremIpsum = styled.span`
+  font-family: Anek Malayalam;
+  top: 18px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255,255,255,1);
+  font-size: 94px;
+  left: 8px;
 `;
+
+const RectStack = styled.div`
+  width: 971px;
+  height: 153px;
+  margin-top: 126px;
+  position: relative;
+`;
+
+const Button5 = styled.div`
+  width: 142px;
+  height: 183px;
+  background-color: rgba(171,10,10,1);
+  border-radius: 22px;
+  shadow-radius: 0px;
+  flex-direction: column;
+  display: flex;
+  margin-left: 59px;
+  border: none;
+  box-shadow: 3px 3px 0px  0.26px rgba(0,0,0,1) ;
+`;
+
+const SignUp = styled.span`
+  font-family: Akshar;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255,255,255,1);
+  font-size: 38px;
+  margin-top: 80px;
+  margin-left: 13px;
+`;
+
+const RectStackRow = styled.div`
+  height: 279px;
+  flex-direction: row;
+  display: flex;
+  margin-top: 76px;
+  margin-left: 162px;
+  margin-right: 32px;
+`;
+
 const Button = styled.div`
   top: 0px;
   left: 0px;
   width: 266px;
   height: 57px;
   position: absolute;
-  background-color: rgba(156, 0, 0, 1);
+  background-color: rgba(156,0,0,1);
   border-radius: 15px;
   shadow-radius: 0px;
   border: none;
-  box-shadow: 3px 3px 0px 0.37px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 0px  0.37px rgba(0,0,0,1) ;
 `;
 
 const Discover = styled.span`
@@ -93,7 +146,7 @@ const Discover = styled.span`
   position: absolute;
   font-style: normal;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255,255,255,1);
   font-size: 45px;
 `;
 
@@ -110,11 +163,11 @@ const Button2 = styled.div`
   width: 266px;
   height: 57px;
   position: absolute;
-  background-color: rgba(160, 9, 9, 1);
+  background-color: rgba(160,9,9,1);
   border-radius: 13px;
   shadow-radius: 0px;
   border: none;
-  box-shadow: 3px 3px 0px 0.27px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 0px  0.27px rgba(0,0,0,1) ;
 `;
 
 const Connect = styled.span`
@@ -124,7 +177,7 @@ const Connect = styled.span`
   position: absolute;
   font-style: normal;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255,255,255,1);
   font-size: 45px;
 `;
 
@@ -141,11 +194,11 @@ const Button3 = styled.div`
   width: 289px;
   height: 57px;
   position: absolute;
-  background-color: rgba(168, 9, 9, 1);
+  background-color: rgba(168,9,9,1);
   border-radius: 16px;
   shadow-radius: 0px;
   border: none;
-  box-shadow: 3px 3px 0px 0.26px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 0px  0.26px rgba(0,0,0,1) ;
 `;
 
 const ContactUs = styled.span`
@@ -155,7 +208,7 @@ const ContactUs = styled.span`
   position: absolute;
   font-style: normal;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255,255,255,1);
   font-size: 45px;
 `;
 
@@ -172,11 +225,11 @@ const Button4 = styled.div`
   width: 289px;
   height: 57px;
   position: absolute;
-  background-color: rgba(170, 10, 10, 1);
+  background-color: rgba(170,10,10,1);
   border-radius: 14px;
   shadow-radius: 0px;
   border: none;
-  box-shadow: 3px 3px 0px 0.3px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 0px  0.3px rgba(0,0,0,1) ;
 `;
 
 const Login = styled.span`
@@ -186,7 +239,7 @@ const Login = styled.span`
   position: absolute;
   font-style: normal;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255,255,255,1);
   font-size: 45px;
 `;
 
@@ -202,73 +255,9 @@ const ButtonStackRow = styled.div`
   height: 65px;
   flex-direction: row;
   display: flex;
-  margin-top: 89px;
-  margin-left: 470px;
-  margin-right: 415px;
-`;
-
-const Rect = styled.div`
-  top: 0px;
-  left: 0px;
-  width: 971px;
-  height: 135px;
-  position: absolute;
-  background-color: rgba(52, 31, 174, 1);
-  border-width: 0px;
-  border-color: #000000;
-  border-style: dotted;
-  border-radius: 39px;
-  box-shadow: 3px 3px 100px 0.42px rgba(0, 0, 0, 1);
-`;
-
-const LoremIpsum = styled.span`
-  font-family: Anek Malayalam;
-  top: 18px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  font-size: 94px;
-  left: 8px;
-`;
-
-const RectStack = styled.div`
-  width: 971px;
-  height: 153px;
-  margin-top: 126px;
-  position: relative;
-`;
-
-const Button5 = styled.div`
-  width: 142px;
-  height: 183px;
-  background-color: rgba(171, 10, 10, 1);
-  border-radius: 22px;
-  shadow-radius: 0px;
-  flex-direction: column;
-  display: flex;
-  margin-left: 59px;
-  border: none;
-  box-shadow: 3px 3px 0px 0.26px rgba(0, 0, 0, 1);
-`;
-
-const SignUp = styled.span`
-  font-family: Akshar;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  font-size: 38px;
-  margin-top: 80px;
-  margin-left: 13px;
-`;
-
-const RectStackRow = styled.div`
-  height: 279px;
-  flex-direction: row;
-  display: flex;
-  margin-top: 14px;
-  margin-left: 526px;
-  margin-right: 415px;
+  margin-top: -358px;
+  margin-left: 106px;
+  margin-right: 32px;
 `;
 
 export default Untitled;
