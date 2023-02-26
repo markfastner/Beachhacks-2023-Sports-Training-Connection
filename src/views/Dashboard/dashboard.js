@@ -8,9 +8,12 @@ import {
   FaSwimmer,
   FaVolleyballBall,
   FaRunning,
+  FaMap,
 } from "react-icons/fa";
 import { IoIosFitness } from "react-icons/io";
 import { TbBike } from "react-icons/tb";
+import { BsGraphUp, BsGlobe } from "react-icons/bs";
+import { AiOutlineWechat } from "react-icons/ai";
 import "./dashboard.css";
 import graph from "./graph.png";
 import Navbar from "../../navbar/NavBar";
@@ -26,6 +29,7 @@ function dashboard(props) {
       </Rect1Row>
       <Rect2Row>
         <Rect2>
+          <p>Categories</p>
           <IconRow>
           <Link to="/Categories">
             <button>
@@ -58,10 +62,12 @@ function dashboard(props) {
       </Rect2Row>
       <Rect3Row>
         <Rect3>
-          <p>Recent Messages</p>
+          <p>Messages</p>
+          <AiOutlineWechat style={{ fontSize: 120 }} />
         </Rect3>
         <Rect6>
-          <img src={graph} style={{ width: 400, marginTop: 20 }}></img>
+          <p>Analytics</p>
+          <BsGraphUp style={{ fontSize: 80 }} />
         </Rect6>
       </Rect3Row>
     </>
@@ -87,19 +93,20 @@ const Rect = styled.div`
 `;
 
 const DashBoard = styled.span`
+  display: grid;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   font-size: 40px;
-  margin-top: 14px;
-  margin-left: 132px;
+  margin-top: 5px;
+  justify-content: center;
 `;
 
 const Rect2 = styled.div`
   width: 351px;
   height: 212px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
   flex-direction: column;
   display: flex;
 `;
@@ -108,7 +115,7 @@ const IconRow = styled.div`
   height: 44px;
   flex-direction: row;
   display: flex;
-  margin-top: 46px;
+  margin-top: 20px;
   margin-left: 41px;
   margin-right: 54px;
   font-size: 40px;
@@ -118,7 +125,7 @@ const Icon5Row = styled.div`
   height: 43px;
   flex-direction: row;
   display: flex;
-  margin-top: 41px;
+  margin-top: 20px;
   margin-left: 41px;
   margin-right: 118px;
   font-size: 40px;
@@ -127,15 +134,20 @@ const Icon5Row = styled.div`
 const Rect4 = styled.div`
   width: 230px;
   height: 212px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
   margin-left: 78px;
+  display grid;
+  display-direction: column;
+  justify-content: center;
 `;
 
 const Rect5 = styled.div`
   width: 199px;
   height: 212px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
   margin-left: 46px;
+  display grid;
+  justify-content: center;
 `;
 
 const Rect2Row = styled.div`
@@ -151,13 +163,15 @@ const Rect2Row = styled.div`
 const Rect3 = styled.div`
   width: 351px;
   height: 263px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
+  display: grid;
+  justify-content: center;
 `;
 
 const Rect6 = styled.div`
   width: 475px;
-  height: 330px;
-  background-color: #e6e6e6;
+  height: 263px;
+  background-color: rgba(37, 32, 32, 1);
   margin-left: 78px;
   margin-top: 4px;
   display: grid;

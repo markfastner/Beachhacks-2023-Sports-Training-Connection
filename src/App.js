@@ -6,12 +6,12 @@ import ContactUs from "./views/ContactUsPage/contactUs";
 import Categories from "./views/Categories/categories";
 import Discover from "./views/Discover/discover";
 import NavBar from "./navbar/NavBar.jsx";
+import Analytics from "./views/Analytics/analytics";
 import "./firebase.js";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import About from "./views/About/about";
 
 function App() {
-  
   return (
     // <div className="App">
     //   <header className="App-header">
