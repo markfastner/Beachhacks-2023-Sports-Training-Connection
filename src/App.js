@@ -3,6 +3,7 @@ import "./App.css";
 import Dashboard from "./views/Dashboard/dashboard.js";
 import LandingPage from "./views/LandingPage/landingPage";
 import ContactUs from "./views/ContactUsPage/contactUs";
+import Discover from "./views/Discover/discover";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
     // </div>
     // <LandingPage />
     // <ContactUs />
-    <Dashboard />
+    // <Dashboard />
+    <Discover />
   );
 }
 
