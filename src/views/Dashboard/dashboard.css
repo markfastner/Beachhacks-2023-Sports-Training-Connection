@@ -1,13 +1,6 @@
-.Box {
-    display: grid;
+p {
+    display: flex;
     justify-content: center;
-    color: white;
+    font-size: 30px;
 }
 
-.Dash-Header {
-    display: grid;
-    width: 462px;
-    height: 72px;
-    justify-content: center;
-    background-color: #252020;
-}
