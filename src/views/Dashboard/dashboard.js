@@ -11,6 +11,7 @@ import {
 import { IoIosFitness } from "react-icons/io";
 import { TbBike } from "react-icons/tb";
 import "./dashboard.css";
+import graph from "./graph.png";
 
 function dashboard(props) {
   return (
@@ -36,6 +37,7 @@ function dashboard(props) {
         </Rect2>
         <Rect4>
           <p> Discover </p>
+          <discoverIcon />
         </Rect4>
         <Rect5>
           <p> Connect </p>
@@ -46,7 +48,7 @@ function dashboard(props) {
           <p>Recent Messages</p>
         </Rect3>
         <Rect6>
-          <p>Analytics</p>
+          <img src={graph} style={{ width: 400, marginTop: 20 }}></img>
         </Rect6>
       </Rect3Row>
     </>
@@ -141,10 +143,12 @@ const Rect3 = styled.div`
 
 const Rect6 = styled.div`
   width: 475px;
-  height: 256px;
+  height: 330px;
   background-color: #e6e6e6;
   margin-left: 78px;
   margin-top: 4px;
+  display: grid;
+  justify-items: center;
 `;
 
 const Rect3Row = styled.div`

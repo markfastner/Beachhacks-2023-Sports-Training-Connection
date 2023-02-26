@@ -4,9 +4,13 @@ import Dashboard from "./views/Dashboard/dashboard.js";
 import LandingPage from "./views/LandingPage/landingPage";
 import ContactUs from "./views/ContactUsPage/contactUs";
 import Categories from "./views/Categories/categories";
+import Discover from "./views/Discover/discover";
+import NavBar from "./navbar/NavBar.jsx";
+import "./firebase.js";
 
 
 function App() {
+  
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -26,8 +30,15 @@ function App() {
     // </div>
     // <ContactUs />
     // <LandingPage />
-    //<Dashboard />
-    <Categories />
+    // <Dashboard />
+    <div>
+      <NavBar />
+      <Discover />
+    </div>
+    
+    
+    // <Categories />
+    
   );
 }
 
