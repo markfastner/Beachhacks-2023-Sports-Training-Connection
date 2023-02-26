@@ -22,7 +22,9 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <LandingPage />
+    <ContactUs />
+    
+    // <LandingPage />
     //<Dashboard />
   );
 }
