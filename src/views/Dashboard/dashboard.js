@@ -60,10 +60,12 @@ function dashboard(props) {
         </Link>
       </Rect2Row>
       <Rect3Row>
+        <Link to="/Messages">
         <Rect3>
-          <p>Messages</p>
+          <button>Messages</button>
           <AiOutlineWechat style={{ fontSize: 120 }} />
         </Rect3>
+        </Link>
         <Rect6>
           <p>Analytics</p>
           <BsGraphUp style={{ fontSize: 80 }} />

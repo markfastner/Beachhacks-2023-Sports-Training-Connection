@@ -40,7 +40,9 @@ const Navbar = () => {
     <a className="btn btn-ghost normal-case text-xl" style = {{color: "white"}}>Connect</a>
   </div>
   <div className="flex-1">
+    <Link to="/Categories">
     <a className="btn btn-ghost normal-case text-xl" style = {{color: "white"}}>Categories</a>
+    </Link>
   </div>
 
   <div className="flex-1">
