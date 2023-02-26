@@ -12,6 +12,7 @@ import {
 import { IoIosFitness } from "react-icons/io";
 import { TbBike } from "react-icons/tb";
 import { BsGraphUp, BsGlobe } from "react-icons/bs";
+import { AiOutlineWechat } from "react-icons/ai";
 import "./dashboard.css";
 
 function dashboard(props) {
@@ -48,7 +49,8 @@ function dashboard(props) {
       </Rect2Row>
       <Rect3Row>
         <Rect3>
-          <p>Recent Messages</p>
+          <p>Messages</p>
+          <AiOutlineWechat style={{ fontSize: 120 }} />
         </Rect3>
         <Rect6>
           <p>Analytics</p>
@@ -149,6 +151,8 @@ const Rect3 = styled.div`
   width: 351px;
   height: 263px;
   background-color: rgba(37, 32, 32, 1);
+  display: grid;
+  justify-content: center;
 `;
 
 const Rect6 = styled.div`
