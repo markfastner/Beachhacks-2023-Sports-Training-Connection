@@ -8,9 +8,7 @@ import Discover from "./views/Discover/discover";
 import NavBar from "./navbar/NavBar.jsx";
 import "./firebase.js";
 
-
 function App() {
-  
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -35,10 +33,8 @@ function App() {
       <NavBar />
       <Discover />
     </div>
-    
-    
+
     // <Categories />
-    
   );
 }
 

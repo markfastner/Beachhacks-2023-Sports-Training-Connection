@@ -7,11 +7,11 @@ import {
   FaSwimmer,
   FaVolleyballBall,
   FaRunning,
+  FaMap,
 } from "react-icons/fa";
 import { IoIosFitness } from "react-icons/io";
 import { TbBike } from "react-icons/tb";
 import "./dashboard.css";
-import graph from "./graph.png";
 
 function dashboard(props) {
   return (
@@ -37,7 +37,7 @@ function dashboard(props) {
         </Rect2>
         <Rect4>
           <p> Discover </p>
-          <discoverIcon />
+          <FaMap style={{ fontSize: 80, margin: 19 }} />
         </Rect4>
         <Rect5>
           <p> Connect </p>
@@ -48,7 +48,7 @@ function dashboard(props) {
           <p>Recent Messages</p>
         </Rect3>
         <Rect6>
-          <img src={graph} style={{ width: 400, marginTop: 20 }}></img>
+          <p>Analytics</p>
         </Rect6>
       </Rect3Row>
     </>
@@ -74,19 +74,20 @@ const Rect = styled.div`
 `;
 
 const DashBoard = styled.span`
+  display: grid;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   font-size: 40px;
-  margin-top: 14px;
-  margin-left: 132px;
+  margin-top: 5px;
+  justify-content: center;
 `;
 
 const Rect2 = styled.div`
   width: 351px;
   height: 212px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
   flex-direction: column;
   display: flex;
 `;
@@ -114,14 +115,17 @@ const Icon5Row = styled.div`
 const Rect4 = styled.div`
   width: 230px;
   height: 212px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
   margin-left: 78px;
+  display grid;
+  display-direction: column;
+  justify-content: center;
 `;
 
 const Rect5 = styled.div`
   width: 199px;
   height: 212px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
   margin-left: 46px;
 `;
 
@@ -138,13 +142,13 @@ const Rect2Row = styled.div`
 const Rect3 = styled.div`
   width: 351px;
   height: 263px;
-  background-color: #e6e6e6;
+  background-color: rgba(37, 32, 32, 1);
 `;
 
 const Rect6 = styled.div`
   width: 475px;
-  height: 330px;
-  background-color: #e6e6e6;
+  height: 150px;
+  background-color: rgba(37, 32, 32, 1);
   margin-left: 78px;
   margin-top: 4px;
   display: grid;
