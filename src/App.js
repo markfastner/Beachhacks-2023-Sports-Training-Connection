@@ -22,10 +22,9 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <ContactUs />
-    
     // <LandingPage />
-    //<Dashboard />
+    // <ContactUs />
+    <Dashboard />
   );
 }
 

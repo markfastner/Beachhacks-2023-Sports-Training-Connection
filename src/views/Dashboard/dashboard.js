@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/dist/MaterialCommunityIcons";
-import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
-import MaterialIconsIcon from "react-native-vector-icons/dist/MaterialIcons";
+import {
+  FaFootballBall,
+  FaBasketballBall,
+  FaSwimmer,
+  FaVolleyballBall,
+  FaRunning,
+} from "react-icons/fa";
+import { IoIosFitness } from "react-icons/io";
+import { TbBike } from "react-icons/tb";
 // import "./dashboard.css";
 // import React, { Component } from "react";
 // import { StyleSheet, View, Text } from "react-native";
@@ -200,76 +207,15 @@ function Untitled(props) {
       <Rect2Row>
         <Rect2>
           <IconRow>
-            <MaterialCommunityIconsIcon
-              name="swim"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 43,
-                width: 40,
-              }}
-            ></MaterialCommunityIconsIcon>
-            <IoniconsIcon
-              name="ios-fitness"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 35,
-                marginLeft: 38,
-              }}
-            ></IoniconsIcon>
-            <IoniconsIcon
-              name="ios-basketball"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 33,
-                marginLeft: 39,
-              }}
-            ></IoniconsIcon>
-            <IoniconsIcon
-              name="ios-american-football"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 33,
-                marginLeft: 38,
-              }}
-            ></IoniconsIcon>
+            <FaFootballBall style={{ fontSize: 40 }} />
+            <IoIosFitness style={{ fontSize: 40, marginLeft: 38 }} />
+            <FaBasketballBall style={{ fontSize: 40, marginLeft: 38 }} />
+            <FaSwimmer style={{ fontSize: 40, marginLeft: 38 }} />
           </IconRow>
           <Icon5Row>
-            <MaterialCommunityIconsIcon
-              name="volleyball"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 43,
-                width: 40,
-              }}
-            ></MaterialCommunityIconsIcon>
-            <MaterialIconsIcon
-              name="directions-bike"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 40,
-                width: 40,
-                marginLeft: 38,
-              }}
-            ></MaterialIconsIcon>
-            <MaterialCommunityIconsIcon
-              name="home"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 43,
-                width: 40,
-                marginLeft: 34,
-              }}
-            ></MaterialCommunityIconsIcon>
+            <FaVolleyballBall style={{ fontSize: 40 }} />
+            <TbBike style={{ fontSize: 40, marginLeft: 38 }} />
+            <FaRunning style={{ fontSize: 40, marginLeft: 38 }} />
           </Icon5Row>
         </Rect2>
         <Rect4></Rect4>
