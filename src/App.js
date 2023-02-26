@@ -5,6 +5,7 @@ import LandingPage from "./views/LandingPage/landingPage";
 import ContactUs from "./views/ContactUsPage/contactUs";
 import Categories from "./views/Categories/categories";
 import Discover from "./views/Discover/discover";
+import Connect from "./views/Connect/connect";
 import NavBar from "./navbar/NavBar.jsx";
 import Analytics from "./views/Analytics/analytics";
 import "./firebase.js";
@@ -43,6 +44,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Analytics" element={<Analytics />} />
         <Route path="/Messages" element={<Messager />} />
+        <Route path="/Connect" element={<Connect />} />
       </Routes>
     </div>
   );
