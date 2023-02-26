@@ -3,6 +3,7 @@ import "./App.css";
 import Dashboard from "./views/Dashboard/dashboard.js";
 import LandingPage from "./views/LandingPage/landingPage";
 import ContactUs from "./views/ContactUsPage/contactUs";
+import Categories from "./views/Categories/categories";
 import Discover from "./views/Discover/discover";
 
 function App() {
@@ -23,10 +24,11 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    // <LandingPage />
     // <ContactUs />
+    // <LandingPage />
     // <Dashboard />
     <Discover />
+    // <Categories />
   );
 }
 
