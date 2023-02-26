@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import LandingPage from "./views";
+import Dashboard from "./views/Dashboard/dashboard";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <LandingPage />
+    <Dashboard />
   );
 }
 

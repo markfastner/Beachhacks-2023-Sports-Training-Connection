@@ -1,0 +1,12 @@
+.Box {
+    display: grid;
+}
+
+.Dash-Header {
+    display: grid;
+    justify-content: center;
+}
+h1 .Dash-Header {
+    border-color: red;
+    border: 10px;
+}
