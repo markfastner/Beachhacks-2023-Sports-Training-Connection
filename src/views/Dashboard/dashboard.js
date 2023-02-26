@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/dist/MaterialCommunityIcons";
+import {Link} from "react-router-dom";
 import {
   FaFootballBall,
   FaBasketballBall,
@@ -12,10 +13,12 @@ import { IoIosFitness } from "react-icons/io";
 import { TbBike } from "react-icons/tb";
 import "./dashboard.css";
 import graph from "./graph.png";
+import Navbar from "../../navbar/NavBar";
 
 function dashboard(props) {
   return (
     <>
+      <Navbar />
       <Rect1Row>
         <Rect>
           <DashBoard>DashBoard</DashBoard>
@@ -24,7 +27,11 @@ function dashboard(props) {
       <Rect2Row>
         <Rect2>
           <IconRow>
+          <Link to="/Categories">
+            <Button>
             <FaFootballBall />
+            </Button>
+          </Link>
             <IoIosFitness style={{ marginLeft: 38 }} />
             <FaBasketballBall style={{ marginLeft: 38 }} />
             <FaSwimmer style={{ marginLeft: 38 }} />
@@ -35,13 +42,19 @@ function dashboard(props) {
             <FaRunning style={{ marginLeft: 38 }} />
           </Icon5Row>
         </Rect2>
-        <Rect4>
-          <p> Discover </p>
+        <Link to="/Discover">
+        <Rect4>         
+          <button>Discover</button>
           <discoverIcon />
         </Rect4>
-        <Rect5>
-          <p> Connect </p>
+        </Link>
+        
+        <Link to="/Connect">
+        <Rect5>         
+          <button>Connect</button>
+          <discoverIcon />
         </Rect5>
+        </Link>
       </Rect2Row>
       <Rect3Row>
         <Rect3>
