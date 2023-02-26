@@ -31,13 +31,13 @@ function App() {
     // <ContactUs />
     // <LandingPage />
     // <Dashboard />
-    <div>
-      <NavBar />
-      <Discover />
-    </div>
+    // <div>
+    //   <NavBar />
+    //   <Discover />
+    // </div>
     
     
-    // <Categories />
+    <Categories />
     
   );
 }
