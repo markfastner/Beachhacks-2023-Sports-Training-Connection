@@ -60,16 +60,16 @@ function dashboard(props) {
         </Link>
       </Rect2Row>
       <Rect3Row>
-        <Rect3 style={{ borderRadius: "50px", color: "white" }}>
-          <p>Messages</p>
-          <AiOutlineWechat style={{ fontSize: 120 }} />
-        </Rect3>
-        <Link to="/Analytics">
-          <Rect6 style={{ borderRadius: "50px", color: "white" }}>
-            <button>Analytics</button>
-            <BsGraphUp style={{ fontSize: 80 }} />
-          </Rect6>
+        <Link to="/Messages">
+          <Rect3 style={{ borderRadius: "50px", color: "white" }}>
+            <button>Messages</button>
+            <AiOutlineWechat style={{ fontSize: 120 }} />
+          </Rect3>
         </Link>
+        <Rect6 style={{ borderRadius: "50px", color: "white" }}>
+          <p>Analytics</p>
+          <BsGraphUp style={{ fontSize: 80 }} />
+        </Rect6>
       </Rect3Row>
     </>
   );

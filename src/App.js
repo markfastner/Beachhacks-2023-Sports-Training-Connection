@@ -10,6 +10,7 @@ import Analytics from "./views/Analytics/analytics";
 import "./firebase.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./views/About/about";
+import Messager from "./views/Message/messager";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/Discover" element={<Discover />} />
         <Route path="/About" element={<About />} />
         <Route path="/Analytics" element={<Analytics />} />
+        <Route path="/Messages" element={<Messager />} />
       </Routes>
     </div>
   );
