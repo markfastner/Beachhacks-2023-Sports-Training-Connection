@@ -70,6 +70,7 @@
 
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
+import Navbar from "../../navbar/NavBar";
 
 const CardFlip = () => {
   const [isFlipped1, setIsFlipped1] = useState(false);
@@ -85,6 +86,8 @@ const CardFlip = () => {
 
   return (
     <div>
+      <Navbar />
+      
       <ReactCardFlip isFlipped={isFlipped1} flipDirection="vertical">
         <div
           style={{

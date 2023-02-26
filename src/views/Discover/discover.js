@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { IoIosFitness } from "react-icons/io";
 import { TbBike } from "react-icons/tb";
+import Navbar from "../../navbar/NavBar";
 
 const discover = () => {
   const Container = styled.div`
@@ -35,6 +36,7 @@ const discover = () => {
 
   return (
     <section className="discover-container">
+      <Navbar />
       <div className="map-container">
         <Map />
       </div>
