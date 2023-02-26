@@ -3,14 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.10",
+    "@mui/styled-engine-sc": "^5.11.9",
+    "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "daisyui": "^2.51.1",
     "firebase": "^9.17.1",
+=======
+    "google-map-react": "^2.2.0",
+>>>>>>> dd8943b01b130f4107e4bdf571089760d6ede84d
     "react": "^18.2.0",
+    "react-card-flip": "^1.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-web": "^0.18.12",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,6 +52,11 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "tailwindcss": "^3.2.7"
+=======
+    "@iconify/icons-mdi": "^1.2.41",
+    "@iconify/react": "^4.1.0"
+>>>>>>> dd8943b01b130f4107e4bdf571089760d6ede84d
   }
 }
