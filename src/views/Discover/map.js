@@ -56,7 +56,7 @@ const MapContainer = () => {
   //     });
   // };
   return (
-    <LoadScript googleMapsApiKey="AIzaSyD4XPQaQeAeHTCqxYVpPHiWfVCIGGsZ0og">
+    <LoadScript googleMapsApiKey="AIzaSyC7wxgZWkIeg5_SopuRAryCEvpL5n4lm0E">
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={15}
