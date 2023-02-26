@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { IoIosFitness } from "react-icons/io";
 import { TbBike } from "react-icons/tb";
+import { BsGraphUp, BsGlobe } from "react-icons/bs";
 import "./dashboard.css";
 
 function dashboard(props) {
@@ -23,6 +24,7 @@ function dashboard(props) {
       </Rect1Row>
       <Rect2Row>
         <Rect2>
+          <p>Categories</p>
           <IconRow>
             <FaFootballBall />
             <IoIosFitness style={{ marginLeft: 38 }} />
@@ -41,6 +43,7 @@ function dashboard(props) {
         </Rect4>
         <Rect5>
           <p> Connect </p>
+          <BsGlobe style={{ fontSize: 80, margin: 19 }} />
         </Rect5>
       </Rect2Row>
       <Rect3Row>
@@ -49,6 +52,7 @@ function dashboard(props) {
         </Rect3>
         <Rect6>
           <p>Analytics</p>
+          <BsGraphUp style={{ fontSize: 80 }} />
         </Rect6>
       </Rect3Row>
     </>
@@ -96,7 +100,7 @@ const IconRow = styled.div`
   height: 44px;
   flex-direction: row;
   display: flex;
-  margin-top: 46px;
+  margin-top: 20px;
   margin-left: 41px;
   margin-right: 54px;
   font-size: 40px;
@@ -106,7 +110,7 @@ const Icon5Row = styled.div`
   height: 43px;
   flex-direction: row;
   display: flex;
-  margin-top: 41px;
+  margin-top: 20px;
   margin-left: 41px;
   margin-right: 118px;
   font-size: 40px;
@@ -127,6 +131,8 @@ const Rect5 = styled.div`
   height: 212px;
   background-color: rgba(37, 32, 32, 1);
   margin-left: 46px;
+  display grid;
+  justify-content: center;
 `;
 
 const Rect2Row = styled.div`
@@ -147,7 +153,7 @@ const Rect3 = styled.div`
 
 const Rect6 = styled.div`
   width: 475px;
-  height: 150px;
+  height: 263px;
   background-color: rgba(37, 32, 32, 1);
   margin-left: 78px;
   margin-top: 4px;
