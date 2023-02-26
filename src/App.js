@@ -6,6 +6,7 @@ import ContactUs from "./views/ContactUsPage/contactUs";
 import Categories from "./views/Categories/categories";
 import Discover from "./views/Discover/discover";
 import NavBar from "./navbar/NavBar.jsx";
+import Analytics from "./views/Analytics/analytics";
 import "./firebase.js";
 import { Route, Routes } from "react-router-dom";
 
@@ -29,8 +30,8 @@ function App() {
     // </div>
     // <ContactUs />
     <>
-      <NavBar />
-      <Discover />
+      {/* <NavBar /> */}
+      <Analytics />
     </>
 
     //   <Categories />
