@@ -66,10 +66,12 @@ function dashboard(props) {
             <AiOutlineWechat style={{ fontSize: 120 }} />
           </Rect3>
         </Link>
-        <Rect6 style={{ borderRadius: "50px", color: "white" }}>
-          <p>Analytics</p>
-          <BsGraphUp style={{ fontSize: 80 }} />
-        </Rect6>
+        <Link to="/Analytics">
+          <Rect6 style={{ borderRadius: "50px", color: "white" }}>
+            <p>Analytics</p>
+            <BsGraphUp style={{ fontSize: 80 }} />
+          </Rect6>
+        </Link>
       </Rect3Row>
     </>
   );
