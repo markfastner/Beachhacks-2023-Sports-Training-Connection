@@ -7,14 +7,10 @@ import Categories from "./views/Categories/categories";
 import Discover from "./views/Discover/discover";
 import NavBar from "./navbar/NavBar.jsx";
 import "./firebase.js";
-import {Route, Routes} from "react-router-dom";
-
-
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-
-   return (
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
@@ -33,28 +29,23 @@ function App() {
     // </div>
     // <ContactUs />
     <>
-    <LandingPage />
-     
       <NavBar />
-      </>
-     
-    
-    
-  //   <Categories />
-    
-   );
-  // return (
-  
-  // <Routes> 
-  //   <Route path="/LandingPage" element={<LandingPage />} />
-  //   <Route path="/Dashboard" element={<Dashboard />} />
-  //   <Route path="/ContactUs" element={<ContactUs />} />
-  //   <Route path="/Categories" element={<Categories />} />
-  //   <Route path="/Discover" element={<Discover />} />
-  // </Routes>
-  // )
+      <Discover />
+    </>
 
+    //   <Categories />
 
+    // return (
+
+    // <Routes>
+    //   <Route path="/LandingPage" element={<LandingPage />} />
+    //   <Route path="/Dashboard" element={<Dashboard />} />
+    //   <Route path="/ContactUs" element={<ContactUs />} />
+    //   <Route path="/Categories" element={<Categories />} />
+    //   <Route path="/Discover" element={<Discover />} />
+    // </Routes>
+    // )
+  );
 }
 
 export default App;
