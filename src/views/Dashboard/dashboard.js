@@ -22,12 +22,12 @@ function dashboard(props) {
     <>
       <Navbar />
       <Rect1Row>
-        <Rect style = {{borderRadius: "50px", color: "white"}}>
+        <Rect style={{ borderRadius: "50px", color: "white" }}>
           <DashBoard>DashBoard</DashBoard>
         </Rect>
       </Rect1Row>
       <Rect2Row>
-        <Rect2 style = {{borderRadius: "50px", color: "white"}}>
+        <Rect2 style={{ borderRadius: "50px", color: "white" }}>
           <p>Categories</p>
           <IconRow>
             <Link to="/Categories">
@@ -46,28 +46,30 @@ function dashboard(props) {
           </Icon5Row>
         </Rect2>
         <Link to="/Discover">
-          <Rect4 style = {{borderRadius: "50px", color: "white"}}>
+          <Rect4 style={{ borderRadius: "50px", color: "white" }}>
             <button>Discover</button>
             <FaMap style={{ fontSize: 80, borderRadius: "10px" }} />
           </Rect4>
         </Link>
 
         <Link to="/Connect">
-          <Rect5 style = {{borderRadius: "50px", color: "white"}}>
+          <Rect5 style={{ borderRadius: "50px", color: "white" }}>
             <button>Connect</button>
             <BsGlobe style={{ fontSize: 80 }} />
           </Rect5>
         </Link>
       </Rect2Row>
       <Rect3Row>
-        <Rect3 style = {{borderRadius: "50px", color: "white"}}>
+        <Rect3 style={{ borderRadius: "50px", color: "white" }}>
           <p>Messages</p>
           <AiOutlineWechat style={{ fontSize: 120 }} />
         </Rect3>
-        <Rect6 style = {{borderRadius: "50px", color: "white"}}>
-          <p>Analytics</p>
-          <BsGraphUp style={{ fontSize: 80 }} />
-        </Rect6>
+        <Link to="/Analytics">
+          <Rect6 style={{ borderRadius: "50px", color: "white" }}>
+            <button>Analytics</button>
+            <BsGraphUp style={{ fontSize: 80 }} />
+          </Rect6>
+        </Link>
       </Rect3Row>
     </>
   );

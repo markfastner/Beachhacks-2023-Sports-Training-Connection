@@ -8,7 +8,7 @@ import Discover from "./views/Discover/discover";
 import NavBar from "./navbar/NavBar.jsx";
 import Analytics from "./views/Analytics/analytics";
 import "./firebase.js";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./views/About/about";
 
 function App() {
@@ -32,22 +32,17 @@ function App() {
     // <ContactUs />
     // <LandingPage />
     // <Dashboard />
-     <div>
-      <Routes> 
-        <Route path="/" element={<LandingPage/>}></Route>
+    <div>
+      <Routes>
+        <Route path="/" element={<LandingPage />}></Route>
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Categories" element={<Categories />} />
         <Route path="/Discover" element={<Discover />} />
-        <Route path="/About" element={<About/>} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Analytics" element={<Analytics />} />
       </Routes>
-     </div>
-      
-      
-    
-    
-
-    
+    </div>
   );
 }
 
