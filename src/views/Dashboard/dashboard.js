@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/dist/MaterialCommunityIcons";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   FaFootballBall,
   FaBasketballBall,
@@ -15,7 +15,6 @@ import { TbBike } from "react-icons/tb";
 import { BsGraphUp, BsGlobe } from "react-icons/bs";
 import { AiOutlineWechat } from "react-icons/ai";
 import "./dashboard.css";
-import graph from "./graph.png";
 import Navbar from "../../navbar/NavBar";
 
 function dashboard(props) {
@@ -31,11 +30,11 @@ function dashboard(props) {
         <Rect2>
           <p>Categories</p>
           <IconRow>
-          <Link to="/Categories">
-            <button>
-            <FaFootballBall />
-            </button>
-          </Link>
+            <Link to="/Categories">
+              <button>
+                <FaFootballBall />
+              </button>
+            </Link>
             <IoIosFitness style={{ marginLeft: 38 }} />
             <FaBasketballBall style={{ marginLeft: 38 }} />
             <FaSwimmer style={{ marginLeft: 38 }} />
@@ -47,17 +46,17 @@ function dashboard(props) {
           </Icon5Row>
         </Rect2>
         <Link to="/Discover">
-        <Rect4>         
-          <button>Discover</button>
-          <discoverIcon />
-        </Rect4>
+          <Rect4>
+            <button>Discover</button>
+            <FaMap style={{ fontSize: 80 }} />
+          </Rect4>
         </Link>
-        
+
         <Link to="/Connect">
-        <Rect5>         
-          <button>Connect</button>
-          <discoverIcon />
-        </Rect5>
+          <Rect5>
+            <button>Connect</button>
+            <BsGlobe style={{ fontSize: 80 }} />
+          </Rect5>
         </Link>
       </Rect2Row>
       <Rect3Row>
