@@ -7,8 +7,7 @@ import Categories from "./views/Categories/categories";
 import Discover from "./views/Discover/discover";
 import NavBar from "./navbar/NavBar.jsx";
 import "./firebase.js";
-import { GoogleAuthProvider } from "firebase/auth";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+
 
 function App() {
   
@@ -32,7 +31,12 @@ function App() {
     // <ContactUs />
     // <LandingPage />
     // <Dashboard />
-    <Discover />
+    <div>
+      <NavBar />
+      <Discover />
+    </div>
+    
+    
     // <Categories />
     
   );
