@@ -32,8 +32,7 @@ function App() {
     // <LandingPage />
     // <Dashboard />
     <div>
-      <NavBar />
-      <Discover />
+      <LandingPage />
     </div>
     
     

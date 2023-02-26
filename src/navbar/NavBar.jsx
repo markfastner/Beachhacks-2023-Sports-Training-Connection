@@ -10,7 +10,7 @@ const Navbar = () => {
 
   setDoc(doc(getFirestore(), "cities", "LA"), {
     name: "Los Angeles",
-    state: "CA",
+    state: "CAAAAA",
     country: "USA"
   });
 
