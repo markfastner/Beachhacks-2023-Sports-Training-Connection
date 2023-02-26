@@ -1,10 +1,19 @@
 import React from 'react';
 import { getFirestore } from "firebase/firestore";
 import { doc, setDoc } from "firebase/firestore"; 
-
+import {Link} from 'react-router-dom';
+import { getAuth, signOut, signInWithPopup, GoogleAuthProvider, signInWithRedirect, SignInMethod } from "firebase/auth";
 // Add a new document in collection "cities"
 
-
+function signout(){
+  const auth = getAuth();
+  signOut(auth).then(() => {
+    console.log("signed out");
+// Sign-out successful.
+}).catch((error) => {
+// An error happened.
+});
+}
 
 const Navbar = () => {
 
@@ -18,20 +27,26 @@ const Navbar = () => {
     <div className="navbar bg-red-800">
 
 <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">Dashboard</a>
+  <Link to="/Dashboard">
+    <a className="btn btn-ghost normal-case text-xl" style = {{color: "white"}}>Dashboard</a>
+    </Link>
   </div>
 <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">Discover</a>
+  <Link to="/Discover">
+    <a className="btn btn-ghost normal-case text-xl" style = {{color: "white"}}>Discover</a>
+  </Link>
   </div>
   <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">Connect</a>
+    <a className="btn btn-ghost normal-case text-xl" style = {{color: "white"}}>Connect</a>
   </div>
   <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">Categories</a>
+    <a className="btn btn-ghost normal-case text-xl" style = {{color: "white"}}>Categories</a>
   </div>
 
   <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">About</a>
+    <Link to="/About">
+    <a className="btn btn-ghost normal-case text-xl" style = {{color: "white"}}>About</a>
+    </Link>
   </div>
   
   <div className="flex-none gap-2">
@@ -50,7 +65,11 @@ const Navbar = () => {
           </a>
         </li>
         <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        <li>
+          <Link to = "/">
+          <a onClick={signout}>Logout</a>
+          </Link>
+          </li>
       </ul>
     </div>
   </div>

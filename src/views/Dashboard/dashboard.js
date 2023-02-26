@@ -28,9 +28,9 @@ function dashboard(props) {
         <Rect2>
           <IconRow>
           <Link to="/Categories">
-            <Button>
+            <button>
             <FaFootballBall />
-            </Button>
+            </button>
           </Link>
             <IoIosFitness style={{ marginLeft: 38 }} />
             <FaBasketballBall style={{ marginLeft: 38 }} />

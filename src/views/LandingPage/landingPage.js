@@ -1,14 +1,32 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/dist/MaterialCommunityIcons";
-import { getAuth, signInWithPopup, GoogleAuthProvider, signInWithRedirect, SignInMethod } from "firebase/auth";
+import { getAuth, signOut, signInWithPopup, GoogleAuthProvider, signInWithRedirect, SignInMethod } from "firebase/auth";
 import dashboard from "../Dashboard/dashboard.js";
+import {BrowserRouter as Router, useNavigate, Switch, Route, Link} from "react-router-dom";
+import { useHistory } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
+
+
 function Untitled(props) {
 
+  const history = createBrowserHistory();
+
+  const isAllowedToNavigate = true; // replace with your boolean value
+
+  // const handleButtonClick = () => {
+  //   if (isAllowedToNavigate) {
+  //     history.push('/Dashboard');
+  //   } else {
+  //     alert('You are not allowed to navigate to other page.');
+  //   }
+  // };
+
   function signIn(){
-    const provider = new GoogleAuthProvider();
+  const provider = new GoogleAuthProvider();
   const auth = getAuth();
-signInWithRedirect(auth, provider)
+  signInWithRedirect(auth, provider)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
     const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -17,9 +35,9 @@ signInWithRedirect(auth, provider)
     const user = result.user;
     // IdP data available using getAdditionalUserInfo(result)
     // ...
-    
-    //route to dashboard
     console.log("signed in");
+    isAllowedToNavigate = true;
+    
     
   }).catch((error) => {
     // Handle Errors here.
@@ -32,48 +50,34 @@ signInWithRedirect(auth, provider)
     const credential = GoogleAuthProvider.credentialFromError(error);
     // ...
   });
+  if (isAllowedToNavigate) {
+    history.push('/Dashboard');
+  } else {
+    alert('You are not allowed to navigate to other page.');
   }
+
+  }
+
+  
 
 
   return (
+    <>
     <>
       <RectStackRow>
         <RectStack>
           <Rect></Rect>
           <LoremIpsum>Exercise with a purpose.</LoremIpsum>
         </RectStack>
-        <Button5>
-          <ButtonOverlay>
-            <SignUp>Sign Up!</SignUp>
-          </ButtonOverlay>
-        </Button5>
       </RectStackRow>
       <ButtonStackRow>
-        <ButtonStack>
-          <Button>
-            <ButtonOverlay></ButtonOverlay>
-          </Button>
-          <Discover>Discover</Discover>
-        </ButtonStack>
-        <Button2Stack>
-          <Button2>
-            <ButtonOverlay></ButtonOverlay>
-          </Button2>
-          <Connect>Connect</Connect>
-        </Button2Stack>
+        
         <Button3Stack>
-          <Button3>
-            <ButtonOverlay></ButtonOverlay>
-          </Button3>
-          <ContactUs>Contact Us</ContactUs>
+     
+          <ContactUs>logout</ContactUs>
         </Button3Stack>
-        <Button4Stack>
-          <Button4 onClick={
-            signIn
-          }>
-              
-            <ButtonOverlay></ButtonOverlay>
-          </Button4>
+        <Button4Stack> 
+          <Button4 onClick={signIn}></Button4>
           <Login>Login</Login>
         </Button4Stack>
       </ButtonStackRow>
@@ -88,7 +92,11 @@ signInWithRedirect(auth, provider)
       ></MaterialCommunityIconsIcon>
 
       
+      
+      
+</>
     </>
+    
   );
 }
 
