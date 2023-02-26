@@ -44,6 +44,7 @@ const dashboard = () => {
       marginTop: 52,
       marginLeft: 234,
       marginRight: 228,
+      alignSelf: "center",
     },
     rect3: {
       width: 351,
@@ -63,23 +64,11 @@ const dashboard = () => {
       marginTop: 37,
       marginLeft: 234,
       marginRight: 228,
+      alignSelf: "center",
     },
   });
 
   return (
-    // <section className="Box">
-    //   <div className="Dash-Header-Box">
-    //     <div className="Dash-Header">
-    //       <h1>Dashboard</h1>
-    //     </div>
-    //   </div>
-
-    //   <div className="Dash-Messages"></div>
-
-    //   <div className="Dash-Analytics"></div>
-
-    //   <div className="Dash-Graph"></div>
-    // </section>
     <View style={StyleSheet.container}>
       <View style={styles.rect}>
         <Text style={styles.dashBoard}>DashBoard</Text>
