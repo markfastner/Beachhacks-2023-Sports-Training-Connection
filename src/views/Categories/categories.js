@@ -92,8 +92,8 @@ const CardFlip = () => {
         <div
           style={{
             backgroundColor: "green",
-            width: "200px",
-            height: "200px",
+            width: "600px",
+            height: "600px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -103,7 +103,7 @@ const CardFlip = () => {
           }}
         >
           <div style={{ textAlign: "center" }}>
-            <h1 style = {{fontSize: "33px", color: "white   "}}>WeightLifting</h1>
+            <h1 style = {{fontSize: "100px", color: "white   "}}>WeightLifting</h1>
             <button onClick={handleClick1}>Flip</button>
           </div>
         </div>
@@ -111,8 +111,8 @@ const CardFlip = () => {
         <div
           style={{
             backgroundColor: "red",
-            width: "200px",
-            height: "200px",
+            width: "600px",
+            height: "600px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -121,7 +121,7 @@ const CardFlip = () => {
           }}
         >
           <div style={{ textAlign: "center" }}>
-            <h1 style = {{fontSize: "10px"}}> Weightlifting works out different muscles depending on the type of exercise you do. Some of the major muscle groups that weightlifting can target are chest, back, shoulders, quads, glutes, hamstrings, biceps and triceps123. You can do exercises like bench press, overhead press, deadlift, squat, curl and dip to work these muscles.</h1>
+            <h1 style = {{fontSize: "33px"}}> Weightlifting works out different muscles depending on the type of exercise you do. Some of the major muscle groups that weightlifting can target are chest, back, shoulders, quads, glutes, hamstrings, biceps and triceps123. You can do exercises like bench press, overhead press, deadlift, squat, curl and dip to work these muscles.</h1>
             <button onClick={handleClick1}>Flip back</button>
           </div>
         </div>
@@ -131,8 +131,8 @@ const CardFlip = () => {
         <div
           style={{
             backgroundColor: "Yellow",
-            width: "200px",
-            height: "200px",
+            width: "600px",
+            height: "600px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -142,7 +142,7 @@ const CardFlip = () => {
           }}
         >
           <div style={{ textAlign: "center" }}>
-            <h1 style = {{fontSize: "40px"}}>Soccer</h1>
+            <h1 style = {{fontSize: "100px"}}>Soccer</h1>
             
             <button onClick={handleClick2}>Flip</button>
           </div>
@@ -151,8 +151,8 @@ const CardFlip = () => {
         <div
           style={{
             backgroundColor: "orange",
-            width: "200px",
-            height: "200px",
+            width: "600px",
+            height: "600px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -161,7 +161,7 @@ const CardFlip = () => {
           }}
         >
           <div style={{ textAlign: "center" }}>
-          <h1 style={{fontSize: "10px", color: "black"}}>
+          <h1 style={{fontSize: "33px", color: "black"}}>
           Soccer works out many muscles in your body. Some of the main ones are quadriceps, hamstrings, gluteus maximus, abductors, adductors, latissimus dorsi, trapezius and biceps1. These muscles help you with kicking, sprinting, tackling, jumping and controlling the ball12. You can do exercises like lateral deficit squats, split squat jumps, single-leg Romanian deadlifts, push-ups and Australian pull-ups to strengthen these muscles </h1> 
             <button onClick={handleClick2}>Flip back</button>
           </div>
@@ -172,8 +172,8 @@ const CardFlip = () => {
         
           style={{
             backgroundColor: "blue",
-            width: "200px",
-            height: "200px",
+            width: "600px",
+            height: "600px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -185,7 +185,7 @@ const CardFlip = () => {
     
           <div style={{ textAlign: "center" }}>
             
-            <h1 style={{fontSize: "40px", color: "Yellow"}}>VolleyBall</h1> 
+            <h1 style={{fontSize: "100px", color: "Yellow"}}>VolleyBall</h1> 
             
              
 
@@ -200,19 +200,20 @@ const CardFlip = () => {
         <div
           style={{
             backgroundColor: "orange",
-            width: "200px",
-            height: "200px",
+            width: "600px",
+            height: "600px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             color: "black",
-            borderRadius: "10px"
+            borderRadius: "10px",
+            marginLeft: "100px"
           }}
         >
           <div style={{ textAlign: "center" }}>
             
             
-            <h1 style={{fontSize: "9px"}}>
+            <h1 style={{fontSize: "33px"}}>
 
 Some of the muscle groups that volleyball works out are:
 
