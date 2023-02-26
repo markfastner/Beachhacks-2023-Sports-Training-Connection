@@ -1,12 +1,13 @@
 .Box {
     display: grid;
+    justify-content: center;
+    color: white;
 }
 
 .Dash-Header {
     display: grid;
+    width: 462px;
+    height: 72px;
     justify-content: center;
-}
-h1 .Dash-Header {
-    border-color: red;
-    border: 10px;
+    background-color: #252020;
 }
