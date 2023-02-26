@@ -72,10 +72,7 @@ function Untitled(props) {
       </RectStackRow>
       <ButtonStackRow>
         
-        <Button3Stack>
-     
-          <ContactUs>logout</ContactUs>
-        </Button3Stack>
+        
         <Button4Stack> 
           <Button4 onClick={signIn}></Button4>
           <Login>Login</Login>
