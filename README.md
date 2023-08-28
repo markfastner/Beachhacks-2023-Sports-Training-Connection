@@ -1,3 +1,38 @@
+Welcome to the Sports Training Connection App repository! This app was created during the Beach Hacks hackathon competition and is designed to connect sports trainers and trainees, providing a platform for them to communicate, share information, and arrange training sessions.
+
+Features
+User Creation, Authorization, and Authentication: Users can create accounts, login, and logout securely using Firebase for the backend.
+
+Google Maps API: We utilized the Google Maps API to provide a real-world map that allows sports trainers and trainees to connect and identify suitable locations for training.
+
+Messaging System: A framework for a messaging system is provided, enabling communication between trainers and trainees.
+
+Information System: Allows users to share and access relevant information such as training schedules, availability, and skills.
+
+Recommendation System: Provides recommendations to users based on their preferences, skills, and goals.
+
+Technologies Used
+ReactJS: The website is built using React, a popular JavaScript library for building user interfaces.
+
+React Router DOM: This library was used to implement client-side routing and improve the user experience.
+
+Firebase: Used for the backend of the application, handling user creation, authorization, and authentication.
+
+Google Cloud: Used to develop an authorization process, ensuring secure access to the website.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
